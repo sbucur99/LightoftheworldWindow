@@ -1,15 +1,17 @@
-const mysql = require('mysql2');
+const mysql = require('mysql');
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'booking_db'
+  host: 'lotw-db.cvewo4o6091h.us-east-2.rds.amazonaws.com', // AWS endpoint
+  user: 'admin',      // your AWS DB username
+  password: 'Silas0442', // your AWS DB password
+  database: 'bookings',
+  port: 3306
 });
 
-db.connect(err => {
-  if (err) throw err;
-  console.log('MySQL connected!');
+db.connect((err) => {
+  if (err) {
+    console.error('Error connecting to AWS MySQL:', err);
+    return;
+  }
+  console.log('Connected to AWS MySQL Database');
 });
-
-module.exports = db;
