@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about exterior window cleaning services in Raleigh.">
+    <title>FAQ | Silas Window Cleaning</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <style>
+        .faq-item { margin-bottom: 15px; }
+        .faq-item button {
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            background: #0077cc;
+            color: white;
+            cursor: pointer;
+        }
+        .faq-item button:focus { outline: none; }
+        .faq-answer { display: none; padding: 10px; border: 1px solid #ccc; border-top: none; }
+    </style>
+    <script>
+        function toggleFAQ(id){
+            var answer = document.getElementById(id);
+            if(answer.style.display === "block") answer.style.display = "none";
+            else answer.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Silas Window Cleaning</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+    </section>
+
+    <section class="content container">
+        <div class="faq-item">
